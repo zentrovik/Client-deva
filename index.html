@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0c0c20">
+    <title>Deva | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <section id="home" class="home-section">
+        <div class="home-bg-elements">
+            <div class="home-glow"></div>
+            <div class="home-particles"></div>
+        </div>
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="main-title">I am <span class="highlight">Deva</span></h1>
+                    <div class="tagline-container">
+                        <p class="tagline" id="animated-text"></p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="icon-glow"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="icon-glow"></span>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span class="icon-glow"></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="model-container" id="model-container">
+                    <!-- 3D model will be rendered here -->
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-down">
+                    <span class="scroll-text">Scroll Down</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
