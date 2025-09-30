@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#0c0c20">
     <title>Deva | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
@@ -14,6 +15,24 @@
 </head>
 <body>
     <div class="cursor-glow"></div>
+    
+    <!-- Glass Navigation Bar -->
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <a href="#home">Deva</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#accomplishments" class="nav-link">Accomplishments</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
     
     <section id="home" class="home-section">
         <div class="home-bg-elements">
@@ -58,6 +77,51 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="img/profile.jpg" alt="Deva's profile picture">
+                        <div class="frame-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <p>Hello! I'm <span class="highlight">Deva</span>, a passionate full-stack developer with a keen eye for design and a love for creating immersive digital experiences.</p>
+                    
+                    <p>With expertise in both front-end and back-end technologies, I build applications that are not only functional but also visually stunning and user-friendly. My background in UI/UX design allows me to approach development with a holistic perspective.</p>
+                    
+                    <p>I'm particularly enthusiastic about 3D web technologies and how they can transform the way we interact with content online. When I'm not coding, you can find me exploring new design trends, experimenting with WebGL, or solving complex problems.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/main.js"></script>
+      <script src="js/nav.js"></script>
 </body>
 </html>
